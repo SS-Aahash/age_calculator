@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+    <div class="parent">
+      <div class="inputs">
+        <div class="input_divs">
+          <label for="din">DAY</label>
+          <input type="text"  id="din" class="input" placeholder="DD" name="" id="">
+          <p class="hidden">This field is required</p>
+        </div>
+        <div class="input_divs">
+          <label for="mahina">MONTH</label>
+          <input type="text" id = "mahina" class="input" placeholder="MM" name="" id="">
+          <p class="hidden">This field is required</p>
+        </div>
+        <div class="input_divs">
+          <label for="sal">YEAR</label>
+          <input type="text" id = "sal"class="input" placeholder="YYYY" name="" id="">
+          <p class="hidden">This field is required</p>
+        </div>
+      </div>
+      <div class="display">
+        <button id="button"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="-5 -5 58 56"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+        <p><span id="year">--</span> years</p>
+        <p><span id="month">--</span> months</p>
+        <p><span id="day">--</span> days</p>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>

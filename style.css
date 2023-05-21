@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFont3';
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color:hsl(0, 0%, 94%);
+}
+
+.parent{
+    /* padding: 2em 2em 2em 2em;
+    background-color: hsl(0, 0%, 100%);/
+    border-radius: 20px 20px 150px 20px;
+    border: 2px solid red;
+    margin: 10px; 
+    ------END-------*/
+    background-color: hsl(0, 0%, 100%);
+    margin: 20px;
+    padding: 30px 20px 30px 20px;
+    border-radius: 20px 20px 90px 20px;
+}
+button{
+    /* position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%,50%);
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 1em;
+    border: none; 
+    -----END-------*/
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black; 
+    
+}
+.inputs{
+    /* display: flex;
+    border: 2px solid red;
+    margin-bottom: 3em; 
+    -------END---------*/
+    display: flex;
+    margin-bottom:3.5em;
+    justify-content: space-around;
+    gap: 15px;
+}
+label{
+    /* font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+    color: red; 
+    -------END---------*/
+    font-family: 'Poppins'; 
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+}
+input{
+    /* width: 4.3em;
+    margin-right: 1em;
+    height: 2.5em;
+    border-radius: 5px;
+    border: 0.1px solid hsl(0, 0%, 86%);
+    outline: none;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Poppins'; 
+    ---------END---------*/
+    width: 3.9em;
+    /* height: 2.5em;    */
+    font-family: 'Poppins';
+    border-radius: 8px;
+    padding: 8px 10px 8px 13px;
+    font-size: 20px;
+    border: 1px solid hsl(0, 0%, 86%);
+    outline: none;
+}
+input:hover{
+    cursor: pointer;
+}
+.input_divs{
+    /* display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 0.5em; 
+    border: 2px solid red; 
+    -----------END-----------*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    /* border: 2px solid red; */
+    /* height: 140px; */
+}
+.input_divs p{
+    margin: 0px;
+}
+p{
+    /* border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    font-family: MyCustomFont;
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+    line-height: 1.1em; 
+    ------END-----------*/
+}
+.display{
+    /* position: relative;
+    border-top: 0.1px solid hsl(0, 0%, 86%); 
+    padding-top: 3em; 
+    ----END---*/
+    position: relative;
+    font-family: 'MyCustomFont';
+    font-size: 2.8rem;
+    line-height: 0.5rem;
+    border-top: 1px solid hsl(0, 0%, 86%);
+    padding-top:0.7em;
+}
+
+span{
+    color: hsl(259, 100%, 65%); 
+}
+.hidden{
+    /* font-family: 'MyCustomFont2';
+    font-size: 11px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+    -----------------END---- */
+    font-size: 11px;
+    font-family: 'MyCustomFont2';
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+@media(min-width : 376px) {
+    .parent{
+        padding: 3em 3em 0em 3em;
+        border-radius: 20px 20px 150px 20px;
+    }
+    input{
+        width: 5em;
+        font-size:25px;
+    }
+    .inputs{
+        justify-content:start;
+        gap: 1.4em;
+        width: 550px;
+        /* border: 2px solid red; */
+        margin: 0px;
+        /* padding-bottom: 10px; */
+    }
+    .display{
+        padding: 0px;
+        font-size: 4.9rem;
+        width:525px;
+    }
+    .input_divs{
+        height: 120px;
+        /* border: 2px solid red; */
+    }
+    .inputs p{
+        margin: 0px;
+    }
+    button{
+        left: 100%;
+        padding: 15px;
+    }
+}
