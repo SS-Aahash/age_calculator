@@ -98,7 +98,7 @@ a.addEventListener('click',()=>{
             }
         }        
     }
-    else if(day.value > 30 || day.value == 0){
+    else if(day.value > 30 || day.value == 0 || (month.value == 2 & day.value > 29)){
         // reset()
         day.style.borderColor = "hsl(0, 100%, 67%)";
         const label = document.querySelector(`label[for=${day.id}]`)
